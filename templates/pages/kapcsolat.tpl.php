@@ -1,3 +1,4 @@
+
 <p>
 A Kecskeméti Világjáró Klub előadásait minden második kedden 18.00 órától tartja a 
 </p>
@@ -35,5 +36,4 @@ Nagyobb térképhez kattinson a szövegre.
 </form>
 
 <?php if (isset($uzenet)) echo "<p><strong>$uzenet</strong></p>"; ?>
-
 
