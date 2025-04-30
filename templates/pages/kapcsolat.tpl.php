@@ -1,4 +1,3 @@
-
 <p>
 A Kecskeméti Világjáró Klub előadásait minden második kedden 18.00 órától tartja a 
 </p>
@@ -37,3 +36,15 @@ Nagyobb térképhez kattinson a szövegre.
 
 <?php if (isset($uzenet)) echo "<p><strong>$uzenet</strong></p>"; ?>
 
+<script>
+document.getElementById("kapcsolatForm").addEventListener("submit", function(e) {
+    let hiba = "";
+    if (document.getElementById("name").value.trim() === "") hiba += "A név megadása kötelező.\n";
+    if (document.getElementById("email").value.trim() === "") hiba += "Az email megadása kötelező.\n";
+    if (document.getElementById("message").value.trim() === "") hiba += "Az üzenet megadása kötelező.\n";
+    if (hiba) {
+        e.preventDefault();
+        alert(hiba);
+    }
+});
+</script>
