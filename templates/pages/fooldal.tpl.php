@@ -108,9 +108,9 @@ Megtudtuk, hogy:
 
 <br><br>
 
-<h3>Az előadások helyszine, a Természet Háza</h3>
+<h3>Részlet egy korábbi előadásból (Vajda Zoltán)</h3>
 <video width="560" height="315" controls>
-  <source src="images/termeszethaza.mp4" type="video/mp4">
+  <source src="images/vz.mp4" type="video/mp4">
   A videó nem támogatott a böngésződben.
 </video>
 
