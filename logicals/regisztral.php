@@ -1,14 +1,16 @@
 <?php
+session_start();
+include('./config.inc.php');
+
 $uzenet = "";
 $ujra = false;
 
-if (
-    $_SERVER["REQUEST_METHOD"] === "POST" &&
+if ($_SERVER["REQUEST_METHOD"] === "POST" &&
     isset($_POST['felhasznalo']) &&
     isset($_POST['jelszo']) &&
     isset($_POST['vezeteknev']) &&
-    isset($_POST['utonev'])
-) {
+    isset($_POST['utonev'])) {
+
     try {
         $dbh = new PDO(
             'mysql:host=localhost;dbname=daczihu0_webprog',
@@ -16,9 +18,9 @@ if (
             '2u4Y3ocdUI',
             array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION)
         );
+
         $dbh->query('SET NAMES utf8 COLLATE utf8_hungarian_ci');
 
-        // Felhasználónév ellenőrzés
         $sqlSelect = "SELECT id FROM felhasznalok WHERE bejelentkezes = :bejelentkezes";
         $sth = $dbh->prepare($sqlSelect);
         $sth->execute([':bejelentkezes' => $_POST['felhasznalo']]);
@@ -27,9 +29,8 @@ if (
             $uzenet = "A felhasználónév már foglalt!";
             $ujra = true;
         } else {
-            // Új regisztráció
-            $sqlInsert = "INSERT INTO felhasznalok (id, csaladi_nev, uto_nev, bejelentkezes, jelszo)
-                          VALUES (0, :csaladinev, :utonev, :bejelentkezes, :jelszo)";
+            $sqlInsert = "INSERT INTO felhasznalok (csaladi_nev, uto_nev, bejelentkezes, jelszo)
+                          VALUES (:csaladinev, :utonev, :bejelentkezes, :jelszo)";
             $stmt = $dbh->prepare($sqlInsert);
             $stmt->execute([
                 ':csaladinev' => $_POST['vezeteknev'],
@@ -40,7 +41,7 @@ if (
 
             if ($stmt->rowCount()) {
                 $newid = $dbh->lastInsertId();
-                $uzenet = "Sikeres regisztráció! Azonosító: {$newid}";
+                $uzenet = "Sikeres regisztráció!";
                 $ujra = false;
             } else {
                 $uzenet = "A regisztráció nem sikerült.";
@@ -51,4 +52,46 @@ if (
         $uzenet = "Hiba: " . $e->getMessage();
         $ujra = true;
     }
+} else {
+    $uzenet = "Hiányzó adatok!";
+    $ujra = true;
 }
+?>
+
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>Regisztráció eredménye</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+            background-color: #f9f9f9;
+        }
+        .message {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: <?= $ujra ? '#f8d7da' : '#d4edda' ?>;
+            color: <?= $ujra ? '#721c24' : '#155724' ?>;
+            border: 1px solid <?= $ujra ? '#f5c6cb' : '#c3e6cb' ?>;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .back-link {
+            display: block;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .back-link a {
+            text-decoration: none;
+            color: #007bff;
+        }
+        .back-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+</html>

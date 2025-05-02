@@ -1,5 +1,71 @@
 <h2>Hírek</h2>
 
+<br><br>
+
+<h3>Következő előadásunk: 2025.04.29-én, Mészáros Gyuláné:
+Madrid és azon túl
+</h3>
+
+<p>
+Az előadóról: Nyugdíjas közgazdász, aki szabadidejében szereti felfedezni a világot. 
+</p>
+
+<p>
+Eddig 40 országban járt és a természet mellett a kultúra és az emberek élete az izgalmas számára.
+</p>
+<br>
+<p>
+Az előadásról: Mészáros Gyuláné Margó megmutatja, milyen benyomást tesz a spanyol jelenlegi és az ősi főváros,
+</p>
+
+<p>illetve ha délre utazunk, a tengerparti sütkérezésen kívül milyen gyöngyszemeket találunk.</p>
+
+<p>
+Megismerhetik Madrid, Toledo, Benalmadena, Malaga és Granada szépségeit.
+
+</p>
+
+<img src="images/20250429.jpg" width="500"><br><br>
+
+<br><br>
+
+<h3>Szabolcs Kata előadása Baliról - 2025.04.15.
+</h3>
+<img src="images/20250414 01.jpg" width="500"><br><br>
+<p>
+Kata Baliról szóló előadásán egyedülálló eseményen vehettek részt vendégeink. A varázslatos sziget bemutatását követően (szó szerint) kis ízelítőt is kaptunk. 
+</p>
+<p>
+Megkóstolhattuk a világ legdrágább kávéját, a kopi luwakot, amit olyan kávészemekből őrölnek, amiket korábban a cibetmacska megevett és utána ...
+</p>
+<img src="images/20250414 02.jpg" width="500"><br><br>
+<img src="images/20250414 03.jpg" width="500"><br><br>
+<p>
+Megtudtuk még:
+</p>
+<p>
+- hogy Indonézia a világ legnagyobb lélekszámú muszlim országa.
+</p>
+<p>
+- a férfiak fején levő kendő, az udeng. Ezt direkt úgy kötik meg, hogy a homloknál felfele álljon a csúcsa, ez az Isten felé irányuló tiszteletet jelképezi.
+</p>
+<p>
+- egy szentélynek minél több teteje van, annál fontosabb helynek számít.
+</p>
+<img src="images/20250414 05.jpg" width="500"><br><br>
+<p>
+- a kesudió a kesugyümölcs alján nő ki. A dió mérgező héját kézzel kaparják le.
+</p>
+<img src="images/20250414 04.jpg" width="500"><br><br>
+<p>
+- évente háromszor is le tudják aratani a rizst.
+</p>
+<p>
+- a komodói varánusz lassú mozgású, hogy tudja elkapni a gyors őzet? Elég megharapnia, és a nyálában levő méreg elvégzi a munkát.
+</p>
+
+<br><br>
+
 <h3>Következő előadásunk: 2025.04.15-én, Szabolcs Kata:
 Az Indonéz szigetvilág
 Bali és más csodák.
@@ -108,9 +174,9 @@ Megtudtuk, hogy:
 
 <br><br>
 
-<h3>Részlet egy korábbi előadásból (Vajda Zoltán)</h3>
+<h3>Az előadások helyszine, a Természet Háza</h3>
 <video width="560" height="315" controls>
-  <source src="images/vz.mp4" type="video/mp4">
+  <source src="images/termeszethaza.mp4" type="video/mp4">
   A videó nem támogatott a böngésződben.
 </video>
 

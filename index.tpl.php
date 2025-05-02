@@ -47,6 +47,9 @@ session_start();
         <div id="content">
             <?php include("./templates/pages/{$keres['fajl']}.tpl.php"); ?>
         </div>
+<div class="back-link">
+    <?= htmlspecialchars($uzenet) ?>
+</div>
     </div>
 
 
